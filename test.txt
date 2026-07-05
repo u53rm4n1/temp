@@ -1,12 +1,14 @@
-sudo dnf groupinstall "Development Tools"
-
-sudo dnf install \
-git cmake meson ninja-build gcc-c++ pkgconf-pkg-config \
-wayland-devel wayland-protocols-devel \
-libxkbcommon-devel libinput-devel libdrm-devel mesa-libEGL-devel mesa-libGLES-devel \
-pixman-devel libseat-devel systemd-devel libdisplay-info-devel \
-libxcb-devel xcb-util-devel xcb-util-renderutil-devel xcb-util-wm-devel \
-xcb-util-image-devel xcb-util-keysyms-devel xcb-util-cursor-devel \
-libX11-devel libXcursor-devel libXfixes-devel libXrender-devel \
-pango-devel cairo-devel hyprlang-devel hyprutils-devel \
-hyprcursor-devel hyprgraphics-devel
+sudo dnf install -y \
+    gcc-c++ cmake meson ninja-build git \
+    pkgconf-pkg-config python3 \
+    wayland-devel wayland-protocols-devel \
+    libdrm-devel libxkbcommon-devel libseat-devel libinput-devel \
+    mesa-libEGL-devel mesa-libgbm-devel \
+    cairo-devel pango-devel pangocairo-devel pixman-devel \
+    libxcb-devel xcb-util-devel xcb-util-wm-devel xcb-util-renderutil-devel \
+    libX11-devel libXcursor-devel \
+    hwdata libdisplay-info-devel libliftoff-devel \
+    glslang-devel re2-devel tomlplusplus-devel \
+    systemd-devel libuuid-devel glib2-devel \
+    xorg-x11-server-Xwayland-devel \
+    cpio  # for hyprpm
