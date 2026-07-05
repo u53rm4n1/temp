@@ -1,0 +1,40 @@
+sudo apt update
+
+sudo apt install -y \
+git cmake meson ninja-build pkg-config build-essential \
+clang gcc g++ \
+libwayland-dev wayland-protocols \
+libxkbcommon-dev \
+libpixman-1-dev \
+libdrm-dev \
+libgbm-dev \
+libegl-dev \
+libgles2-mesa-dev \
+libinput-dev \
+libseat-dev \
+libdisplay-info-dev \
+libxcb1-dev \
+libxcb-composite0-dev \
+libxcb-res0-dev \
+libxcb-render0-dev \
+libxcb-xfixes0-dev \
+libxcb-errors-dev \
+libx11-dev \
+libxinerama-dev \
+libxcursor-dev \
+libxfixes-dev \
+libxrender-dev \
+libxrandr-dev \
+libpango1.0-dev \
+libcairo2-dev \
+libjpeg-dev \
+libwebp-dev \
+libmagic-dev \
+libsystemd-dev \
+libudev-dev \
+libliftoff-dev \
+libzip-dev \
+hwdata \
+scdoc \
+wget \
+curl
